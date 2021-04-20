@@ -13,7 +13,7 @@
 <script>
 import { computed, reactive } from "vue";
 import { AppState } from "../AppState";
-import { pokemonsService } from "../services/PokemonsService";
+import { pokemonsService } from "../Services/PokemonsService";
 import PokemonElement from "./PokemonElementComponent";
 export default {
   name: "results",
@@ -35,5 +35,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

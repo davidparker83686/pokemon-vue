@@ -1,10 +1,9 @@
-
-import { reactive } from 'vue'
-import Pokemon from './models/Pokemon'
+import {reactive} from "vue"
 
 export const AppState = reactive({
-  /** @type {Pokemon[]} */
   results: [],
-  /** @type {Pokemon} */
-  activePokemon: null
-})
+
+  activePokemon: null,
+
+  myPokemon: []
+});

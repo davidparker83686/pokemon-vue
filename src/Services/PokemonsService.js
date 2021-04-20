@@ -1,16 +1,16 @@
-import { AppState } from '../AppState'
-import Pokemon from '../models/Pokemon'
-import { pokemonApi } from './AxiosService'
+import { AppState } from "../AppState";
+import Pokemon from "../models/Pokemon";
+import { pokemonApi } from "./AxiosService";
 
 class PokemonsService {
   async getPokemons(query) {
-    const res = await pokemonApi.get(query)
-    AppState.results = res.data.results.map(r => new Pokemon(r))
+    const res = await pokemonApi.get(query);
+    AppState.results = res.data.results.map((r) => new Pokemon(r));
   }
 
   setActive(pokemon) {
-    AppState.activeMovie = pokemon
+    AppState.activePokemon = pokemon;
   }
 }
 
-export const pokemonsService = new PokemonsService()
+export const pokemonsService = new PokemonsService();
