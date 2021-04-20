@@ -1,27 +1,23 @@
 <template>
   <div class="component container-fluid">
+
     <div class="row">
-      <div class="col">
-        <form @submit.prevent="search">
-          <label for="movie">Movie Title</label>
-          <input
-            type="text"
-            name="movie"
-            id="movie"
-            placeholder="Title..."
-            v-model="state.query"
-          />
-          <button type="submit" class="btn btn-primary">Search</button>
-        </form>
+      <div class="col-11">
+          <Results />
       </div>
     </div>
     <div class="row">
-      <div class="col">
-        <Results />
+      <div class="col-6">
+
       </div>
-      <div class="col">
+
+      <div class="col-6">
         <Details />
       </div>
+
+<button class="btn btn-danger" type="button" v-on:click="addPokemon(pokemon)" >Add to Your Party</button>
+<button class="btn btn-info" type="button" v-on:click="deletePokemon(pokemon)">Remove from Party</button>
+
     </div>
   </div>
 </template>

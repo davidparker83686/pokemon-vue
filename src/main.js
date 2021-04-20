@@ -1,8 +1,5 @@
-import Vue from "vue";
+import { createApp } from "@vue/runtime-dom";
 import App from "./App.vue";
 
-Vue.config.productionTip = false;
-
-new Vue({
-  render: (h) => h(App),
-}).$mount("#app");
+const root = createApp(App)
+root.mount("#app")

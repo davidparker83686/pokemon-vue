@@ -22,7 +22,7 @@ export default {
 </script>
 
 
-<style scoped lang="scss" scoped>
+<style scoped lang="scss">
 .media {
   cursor: pointer;
   &:hover {
